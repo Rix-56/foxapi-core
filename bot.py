@@ -59,4 +59,4 @@ async def on_message(message):
     if message.content.startswith('>pile-ou-face'):
         await message.channel.send("Under construction !")
 
-rixybot.run("NzAwMDQ2MDUzMDI5ODM4ODc4.Xpg0LA.p7ckf61rQZL6h4j-fpPgeB-6bYk")
+rixybot.run("Votre token")

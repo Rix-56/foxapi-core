@@ -1,5 +1,6 @@
 #on fait les imports des modules
 import asyncio
+import logging
 
 import discord
 from discord.ext import commands
@@ -7,6 +8,13 @@ from discord.ext import commands
 print("RixyBot - 0.1 Indev")
 print("Connexion en cours à Discord...")
 
+#créer des logs
+
+logger = logging.getLogger('discord')
+logger.setLevel(logging.DEBUG)
+handler = logging.FileHandler(filename='rixybot.log', encoding='utf-8', mode='w')
+handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
+logger.addHandler(handler)
 
 #on set un prefix
 

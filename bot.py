@@ -55,7 +55,7 @@ async def on_ready():
 async def on_command_error(ctx, error):
     print(str(error))
     if "is not found" in str(error):
-        await ctx.send('MDR ta cru que cette commande existait ? Petite astuce : met >help pour les commandes ;)')
+        await ctx.send('MDR ta cru que cette commande existait ? Petite astuce : met >help pour les commandes :wink:')
 
 #on créer des commandes
 

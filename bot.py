@@ -48,6 +48,7 @@ client.remove_command('help')
 @client.event
 async def on_ready():
     print(f'Connecté à Discord : depuis votre token , je suis connecté en tant que {client.user.name} - {client.user.id}.')
+    print('Le tag discord : {0.user}.'.format(client))
     game = discord.Game("RixyBot v1 Square release - Tapez >help pour les commandes - Je pense que le Covid-19 est dû à un Pokémon sorti de laboratoire.")
     await client.change_presence(status=discord.Status.online, activity=game)
 

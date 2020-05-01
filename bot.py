@@ -39,7 +39,7 @@ client = commands.Bot(
     case_insensitive=True
 )
 
-admin = [475215232961085440, 296028798527209472, 443804115991134228, 270903423371575296, 476069913157566494, 326774999614488588]
+admin = []
 
 #on enlève la commande help
 client.remove_command('help')
